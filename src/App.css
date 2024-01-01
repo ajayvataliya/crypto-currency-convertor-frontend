@@ -1,0 +1,79 @@
+body {
+    background-image: url('../assests/crypto-background.jpg') !important;
+    background-size: cover;
+}
+
+.card {
+    box-shadow: #041313 0 0 18px 8px;
+}
+.card-container {
+    min-width: 350px;
+}
+
+.submit-button {
+    background-image: linear-gradient(to left, #138b82, #030e10);
+    color: #fff !important;
+    box-shadow: #041313 0 0 18px -5px;
+    border: none !important;
+}
+
+p {
+    margin: 10px 0 0 0 !important;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    background-image: linear-gradient(to left, #138b82, #030e10);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.error {
+    font-size: 12px;
+    color: red;
+}
+
+.loader{
+    margin-left:8px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid #f0f3f3;
+    border-top: 2px solid #fefefe;
+    animation: loader 1.8s cubic-bezier(0.74, -0.41, 0.58, 1) infinite alternate;
+}
+
+.loader:before {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    top: 5px;
+    left: 0px;
+    right: 0px;
+    bottom: 5px;
+    border-left: 2px solid #f0f3f3;
+    border-right: 2px solid #f0f3f3;
+}
+
+@keyframes loader {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(720deg);}
+}
+@-webkit-keyframes loader {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(720deg);}
+}
+
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
